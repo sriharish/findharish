@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ViewChild, Component, OnInit, HostListener, HostBinding } from '@angular/core';
+import { MdSidenav } from '@angular/material';
+import { Router, NavigationStart, Event as NavigationEvent } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('sidenav') sidenav: MdSidenav;
+
+  constructor(router: Router) {
+    router.events.subscribe((event: NavigationEvent) => {
+      if (event instanceof NavigationStart) {
+        this.sidenav.close();
+      }
+    });
+  }
 
   ngOnInit() {
   }

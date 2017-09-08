@@ -1,0 +1,34 @@
+md-sidenav {
+  width: 300px;
+  .sidenav-content {
+    margin: 0;
+    padding: 0;
+    .logo-btn {
+      display: inline-block;
+      line-height: 62px;
+      margin: 0;
+      -webkit-margin-after: 0;
+      padding-left: 22px;
+      height: 63px;
+      width: 212px;
+    }
+    .close-btn {
+      height: 63px;
+      width: 63px;
+      float: right;
+    }
+  }
+}
+
+.mat-list {
+  padding-top: 0;
+  button {
+    width: 100%;
+    height: 100%;
+    text-align: start;
+  }
+}
+
+md-divider {
+  margin: 0;
+}

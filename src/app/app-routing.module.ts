@@ -9,27 +9,27 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: '/home.module#HomeModule'
+    loadChildren: './home/home.module#HomeModule'
   },
   {
     path: 'about',
-    loadChildren: '/about.module#AboutModule'
+    loadChildren: './about/about.module#AboutModule'
   },
   {
     path: 'blog',
-    loadChildren: '/blog.module#BlogModule'
+    loadChildren: './blog/blog.module#BlogModule'
   },
   {
     path: 'contact',
-    loadChildren: '/contact.module#ContactModule'
+    loadChildren: './contact/contact.module#ContactModule'
   },
   {
     path: 'post',
-    loadChildren: '/post.module#PostModule'
+    loadChildren: './post/post.module#PostModule'
   },
   {
     path: 'work',
-    loadChildren: '/home.module#HomeModule'
+    loadChildren: './work/work.module#WorkModule'
   }
 ];
 

@@ -1,3 +1,24 @@
-<p>
-  nav works!
-</p>
+<md-toolbar>
+  <button md-icon-button (click)="sidenav.open()">
+    <md-icon>menu</md-icon>
+  </button>
+</md-toolbar>
+
+<md-sidenav #sidenav>
+  <div class="sidenav-content">
+    <button md-button class="uppercase logo-btn" routerLink="home">
+      <span class="mat-display-1">Harish Vangavolu</span>
+    </button>
+    <button md-button class="close-btn" color="secondary" (click)="sidenav.close()">
+      <md-icon>close</md-icon>
+    </button>
+    <md-list>
+      <md-divider></md-divider>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="blog">Blog</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="work">Work</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="about">About</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="contact">Contact</button></md-list-item>
+    </md-list>
+  </div>
+</md-sidenav>
+

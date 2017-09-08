@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import '~@angular/material/theming';
+
+/*Global Styles*/
+body {
+  margin: 0;
+}
+
+.mat-list-item-content {
+  padding: 0 !important;
+}
+
+/*Helpers*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/*Custom typography*/
+$app-typography : mat-typography-config(
+  $font-family: 'Titillium Web',
+  $display-1: mat-typography-level(16px, 63px, 500)
+);
+
+@include angular-material-typography($app-typography);
+
+
+/*Custom themes*/
