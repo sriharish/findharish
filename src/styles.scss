@@ -16,6 +16,28 @@ body {
   text-transform: uppercase;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.img-desaturated {
+  filter: grayscale(100%);
+}
+
+img {
+  .desaturate {
+    @extend .img-desaturated;
+  }
+}
+
 
 /*Custom typography*/
 $app-typography : mat-typography-config(

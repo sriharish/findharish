@@ -1,8 +1,19 @@
-.example-card {
-  width: 400px;
-}
-
-.example-header-image {
-  background-image: url('../../assets/img/pikachu.png');
+.parallax {
+  background-image: url('../../assets/img/main_shot.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.mat-h1 {
+  margin-top: 16px;
+}
+

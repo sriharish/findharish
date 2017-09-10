@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '@shared/shared.module';
-import { MdSidenavModule } from '@angular/material';
+import { MaterialModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,10 @@ import { MdSidenavModule } from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialModule,
     MdSidenavModule,
+    MdListModule,
+    MdToolbarModule,
     SharedModule.forRoot()
   ],
   providers: [],

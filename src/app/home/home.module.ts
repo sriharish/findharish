@@ -4,15 +4,16 @@ import { HomeComponent } from './home.component';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdCardModule, MdButtonModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdIconModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
     FlexLayoutModule,
-    MdCardModule,
-    MdButtonModule
+    MdIconModule,
+    MdButtonModule,
+    MdCardModule
   ],
   declarations: [HomeComponent]
 })
