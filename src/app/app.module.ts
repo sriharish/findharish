@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '@shared/shared.module';
 import { MaterialModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MaterialModule, MdListModule, MdSidenavModule, MdToolbarModule } from '
     MdSidenavModule,
     MdListModule,
     MdToolbarModule,
+    FlexLayoutModule,
     SharedModule.forRoot()
   ],
   providers: [],

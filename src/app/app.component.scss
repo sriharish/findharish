@@ -25,3 +25,10 @@ md-divider {
   top: 64px;
   position: absolute;
 }
+
+footer {
+  padding: 16px;
+  .mat-display-2 {
+    margin-bottom: 0;
+  }
+}
