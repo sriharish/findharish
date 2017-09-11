@@ -1,16 +1,16 @@
 <div fxLayout="column" fxFlexFill>
   <div class="parallax img-desaturated" fxLayout="column" fxLayoutAlign="center center">
-    <h1 class="mat-display-3 no-margin">I am Harish Vangavolu</h1>
-    <h1 class="mat-h1">Web Developer and Next Level Dude</h1>
+    <h1 class="mat-display-3 no-margin">I am <strong>Harish Vangavolu</strong></h1>
+    <h1 class="mat-h1">Web Developer and Aspiring Entrepreneur</h1>
     <button md-fab color="primary"><md-icon>keyboard_arrow_down</md-icon></button>
   </div>
-  <div fxLayout="column" fxLayoutAlign="center center">
+  <div class="container" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-h1">
-      About Me
+      About <strong>Me</strong>
     </h1>
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center space-around" fxLayoutGap="5px" fxLayoutWrap fxFlexFill>
-      <div fxFlex="30%" fxFlex.lt-md="none">
-        <md-card>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap="10px" fxLayoutWrap fxFlexFill>
+      <div fxFlex="30%" fxFlex.lt-md="none" fxFlexFill>
+        <md-card class="about-card">
           <md-card-content>
             <h1 class="mat-card-title">My Inspiration</h1>
             <p class="mat-card-content">
@@ -19,8 +19,8 @@
           </md-card-content>
         </md-card>
       </div>
-      <div fxFlex="30%" fxFlex.lt-md="none">
-        <md-card>
+      <div fxFlex="30%" fxFlex.lt-md="none" fxFlexFill>
+        <md-card class="about-card">
           <md-card-content>
             <h1 class="mat-card-title">My Work</h1>
             <p class="mat-card-content">
@@ -28,16 +28,136 @@
             </p>
           </md-card-content>
         </md-card>
-      </div><div fxFlex="30%" fxFlex.lt-md="none">
-      <md-card>
-        <md-card-content>
-          <h1 class="mat-card-title">My Ambition</h1>
-          <p class="mat-card-content">
-            My most dear aspiration is to be the best artist, long-distance runner, and explorer in the software industry.
-          </p>
-        </md-card-content>
-      </md-card>
-    </div>
+      </div>
+      <div fxFlex="30%" fxFlex.lt-md="none" fxFlexFill>
+        <md-card class="about-card">
+          <md-card-content>
+            <h1 class="mat-card-title">My Ambition</h1>
+            <p class="mat-card-content">
+              My most dear aspiration is to be the best artist, long-distance runner, and explorer in the software industry.
+            </p>
+          </md-card-content>
+        </md-card>
+      </div>
     </div>
   </div>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="mat-h1">
+      My <strong>Work and Abilities</strong>
+    </h1>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="5px" fxLayoutAlign="space-between top" fxLayoutWrap fxFlexFill>
+      <div fxFlex="48%" fxFlex.lt-md="none">
+        <blockquote>
+          <h2 class="mat-h2 no-margin">Service Corp. International</h2>
+          <h3 class="mat-h3 no-margin">Web Developer</h3>
+          <h3 class="mat-h3">September, 2016 - Present (1 year)</h3>
+          <p class="mat-body">As part of a team at SCI, I implemented the front-end for one of the world’s first floral services application for cemeteries, cemeteryflowers.com, using Angular and ASP.NET REST services.</p>
+        </blockquote>
+        <blockquote>
+          <h2 class="mat-h2 no-margin">Texas A&M University Petroleum Department</h2>
+          <h3 class="mat-h3 no-margin">Student Worker, IT</h3>
+          <h3 class="mat-h3">May, 2014 - May, 2016</h3>
+          <p class="mat-body">These were some of the best years of my life. While attending school and earning my Bachelor's in Engineering, I would learn the processes of IT infrastucture management and graduate level research.</p>
+        </blockquote>
+        <blockquote>
+          <h2 class="mat-h2 no-margin">Mercedes-Benz Financial Services</h2>
+          <h3 class="mat-h3 no-margin">Summer Intern, IT Remarketing</h3>
+          <h3 class="mat-h3">June, 2014 - Septermber, 2014</h3>
+          <p class="mat-body">MBFS was my first initiation into the world of enterprise software development. I learned how to build automated scripts in Java and helped develop the basis for a unified sales data management system.</p>
+        </blockquote>
+      </div>
+      <div fxFlex="48%" fxFlex.lt-md="none">
+        <div class="container" fxLayout="column">
+          <h2 class="mat-h2 work-level-h2">TypeScript and JavaScript (ES6)</h2>
+          <md-progress-bar color="primary" mode="determinate" value="100"></md-progress-bar>
+          <h2 class="mat-h2 work-level-h2">HTML5/CSS3/SCSS/LESS</h2>
+          <md-progress-bar color="primary" mode="determinate" value="100"></md-progress-bar>
+          <h2 class="mat-h2 work-level-h2">C#</h2>
+          <md-progress-bar color="primary" mode="determinate" value="80"></md-progress-bar>
+          <h2 class="mat-h2 work-level-h2">C/C++</h2>
+          <md-progress-bar color="primary" mode="determinate" value="70"></md-progress-bar>
+          <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between top" fxLayoutWrap>
+            <div fxFlex="100%">
+              <h2 class="mat-h2 work-level-h2">My Favorite Frameworks and APIs</h2>
+            </div>
+            <img class="img-64" src="https://angularjs.org/favicon.ico">
+            <img class="img-64" src="https://avatars-02.gitter.im/group/iv/3/57542c6fc43b8c6019773237">
+            <img class="img-64" src="http://pixxstudios.com/wp-content/uploads/2014/11/1421797567_nodejs-128.png">
+            <img class="img-64" src="https://chdecultot.com/images/express-js.png">
+            <img class="img-64" src="https://www.gstatic.com/images/branding/product/1x/maps_64dp.png">
+            <img class="img-64" src="http://acesubido.com/css3-microsoft-metro-buttons/img/bootstrap.png">
+            <img class="img-64" src="https://chocolatey.org/content/packageimages/aspnet5.1.0.11123.0.png">
+            <img class="img-64" src="https://avatars2.githubusercontent.com/u/22526200?v=4&s=280">
+            <img class="img-64" src="http://graphql.org/img/logo.svg">
+          </div>
+          <a href="../../assets/doc/cv.pdf" target="_blank" class="cv-btn uppercase" md-raised-button>curriculum vitae</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="mat-h1">
+      Process of <strong>Creating</strong>
+    </h1>
+      <md-tab-group fxFlexFill>
+        <md-tab label="Project Management">
+          <h1>I'm a Boss</h1>
+          <p>
+            It has long been my drive to maintain a mastery of application development end to end.
+            This mastery doesn't just include and end to end knowledge of maintaining a full stack application, but also
+            tools like GitHub, Microsoft Team Foundation Server, Asana, and Trello which aid in decreasing project management complexity.
+            Finally, I'm flexible in multiple development environments (provided it's on Windows or Linux) such as
+            Visual Studio, WebStorm, and Eclipse and am always ready to hit the ground running!
+          </p>
+        </md-tab>
+        <md-tab label="Design">
+          <h1>I'm an Artist</h1>
+          <p>
+            It has long been my drive to maintain a mastery of application development end to end.
+            This mastery doesn't just include and end to end knowledge of maintaining a full stack application, but also
+            tools like GitHub, Microsoft Team Foundation Server, Asana, and Trello which aid in decreasing project management complexity.
+            Finally, I'm flexible in multiple development environments (provided it's on Windows or Linux) such as
+            Visual Studio, WebStorm, and Eclipse and am always ready to hit the ground running!
+          </p>
+        </md-tab>
+        <md-tab label="Development">
+          <h1>I'm a Wizard</h1>
+          <p>
+            It has long been my drive to maintain a mastery of application development end to end.
+            This mastery doesn't just include and end to end knowledge of maintaining a full stack application, but also
+            tools like GitHub, Microsoft Team Foundation Server, Asana, and Trello which aid in decreasing project management complexity.
+            Finally, I'm flexible in multiple development environments (provided it's on Windows or Linux) such as
+            Visual Studio, WebStorm, and Eclipse and am always ready to hit the ground running!
+          </p>
+        </md-tab>
+      </md-tab-group>
+  </div>
+  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="mat-h1">
+      Contact <strong>Me</strong>
+    </h1>
+    <p class="mat-subheading-1">Love the site? Want to connect on Steam or Battle.net? Want to say "Hi!"? Just send me an email and I'll get back to you as soon as I can. I look forward to it!</p>
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap fxFlexFill>
+      <form fxLayout="column" fxLayoutAlign="center center" fxFlex="88%" fxFlex.lt-md="100%">
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" fxLayoutWrap fxFlexFill>
+          <md-form-field fxFlex="48%" fxFlex.lt-md="100%"><input mdInput placeholder="Your Name"></md-form-field>
+          <md-form-field fxFlex="48%" fxFlex.lt-md="100%"><input mdInput placeholder="Your Email"></md-form-field>
+        </div>
+        <md-form-field fxFlexFill><input mdInput placeholder="Subject"></md-form-field>
+        <md-form-field fxFlexFill><textarea mdInput placeholder="Your Message"></textarea></md-form-field>
+        <div fxLayout="row" fxLayoutAlign="end center" fxFlexFill>
+          <button class="uppercase" md-button>Send</button>
+        </div>
+      </form>
+      <div fxLayout="column" fxLayoutGap="5px" fxFlex="10%" fxFlex.lt-md="100%">
+        <button md-raised-button class="ext-contact-btn">My LinkedIn</button>
+        <button md-raised-button class="ext-contact-btn">My GitHub</button>
+        <button md-raised-button class="ext-contact-btn">My Stack Exchange</button>
+        <button md-raised-button class="ext-contact-btn">My Code Fights</button>
+      </div>
+    </div>
+  </div>
+  <footer fxLayout="row" fxLayoutAlign="center center">
+    <span class="mat-display-2">Thanks for visiting!</span>
+  </footer>
 </div>

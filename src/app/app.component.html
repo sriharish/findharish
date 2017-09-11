@@ -1,24 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<md-sidenav-container>
-  <md-sidenav #sidenav>
-    <button md-button class="uppercase logo-btn" routerLink="home">
-      <span class="mat-display-1">Harish Vangavolu</span>
-    </button>
-    <button md-button class="close-btn" color="secondary" (click)="sidenav.close()">
-      <md-icon>close</md-icon>
-    </button>
+<md-toolbar class="fixed-header">
+  <button md-icon-button (click)="sidenav.toggle()">
+    <md-icon>{{sidenav.opened ? 'close' : 'menu'}}</md-icon>
+  </button>
+</md-toolbar>
+<md-sidenav-container class="fixed-container">
+  <md-sidenav #sidenav mode="over">
     <md-list>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="home">Home</button></md-list-item>
+      <md-divider></md-divider>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="about">About</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="work">Work</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="process">Process</button></md-list-item>
+      <md-list-item><button class="uppercase mat-button" md-button routerLink="contact">Contact</button></md-list-item>
       <md-divider></md-divider>
       <md-list-item><button class="uppercase mat-button" md-button routerLink="blog">Blog</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="work">Work</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="about">About</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="contact">Contact</button></md-list-item>
     </md-list>
   </md-sidenav>
-  <md-toolbar>
-    <button md-icon-button (click)="sidenav.open()">
-      <md-icon>menu</md-icon>
-    </button>
-  </md-toolbar>
   <router-outlet></router-outlet>
 </md-sidenav-container>

@@ -17,3 +17,56 @@
   margin-top: 16px;
 }
 
+.work-level-h2 {
+  margin: 16px 0;
+}
+
+.container {
+  margin: 0 40px;
+}
+
+@mixin img-dimensions($dim) {
+  height: $dim;
+  width: $dim;
+}
+
+.img-64 {
+  @include img-dimensions(64px);
+  margin-bottom: 10px;
+}
+
+.img-48 {
+  @include img-dimensions(48px);
+  margin-bottom: 10px;
+}
+
+.cv-btn {
+  margin-top: 30px;
+}
+
+.ext-contact-btn {
+  min-width: 156px;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 960px) {
+  .about-card {
+    min-height: 157px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .about-card {
+    min-height: 136px;
+  }
+}
+
+footer {
+  padding: 16px;
+  .mat-display-2 {
+    margin-bottom: 0;
+  }
+}

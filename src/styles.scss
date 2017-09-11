@@ -11,6 +11,15 @@ body {
   padding: 0 !important;
 }
 
+blockquote {
+  border-left: 3px solid #FF0800;
+  padding: 0 1rem;
+}
+
+.mat-tab-label {
+  width: 33.33%;
+}
+
 /*Helpers*/
 .uppercase {
   text-transform: uppercase;

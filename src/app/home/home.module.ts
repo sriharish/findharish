@@ -4,7 +4,10 @@ import { HomeComponent } from './home.component';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MdButtonModule, MdCardModule, MdIconModule } from '@angular/material';
+import {
+  MdButtonModule, MdCardModule, MdFormFieldModule, MdIconModule, MdInputModule, MdProgressBarModule,
+  MdTabsModule
+} from '@angular/material';
 
 @NgModule({
   imports: [
@@ -13,7 +16,11 @@ import { MdButtonModule, MdCardModule, MdIconModule } from '@angular/material';
     FlexLayoutModule,
     MdIconModule,
     MdButtonModule,
-    MdCardModule
+    MdCardModule,
+    MdProgressBarModule,
+    MdTabsModule,
+    MdFormFieldModule,
+    MdInputModule
   ],
   declarations: [HomeComponent]
 })
