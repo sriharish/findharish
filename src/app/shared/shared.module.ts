@@ -6,6 +6,7 @@ import { SlideComponent } from './slide-show/slide/slide.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ModuleWithProviders, Optional, SkipSelf } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { StringService } from '@shared/string.service';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ export class SharedModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: []
+      providers: [StringService]
     };
   }
 }

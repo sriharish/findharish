@@ -6,7 +6,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MdButtonModule, MdCardModule, MdFormFieldModule, MdIconModule, MdInputModule, MdProgressBarModule,
-  MdTabsModule
+  MdTabsModule, MdTooltipModule
 } from '@angular/material';
 
 @NgModule({
@@ -20,7 +20,8 @@ import {
     MdProgressBarModule,
     MdTabsModule,
     MdFormFieldModule,
-    MdInputModule
+    MdInputModule,
+    MdTooltipModule
   ],
   declarations: [HomeComponent]
 })
