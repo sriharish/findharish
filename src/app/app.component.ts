@@ -1,6 +1,7 @@
 import { ViewChild, Component, OnInit, HostListener, HostBinding } from '@angular/core';
 import { MdSidenav } from '@angular/material';
 import { Router, NavigationStart, Event as NavigationEvent } from '@angular/router';
+import { PageScrollConfig } from 'ng2-page-scroll';
 
 @Component({
   selector: 'app-root',
@@ -18,5 +19,8 @@ export class AppComponent {
         this.sidenav.close();
       }
     });
+
+    PageScrollConfig.defaultDuration = 200;
+    PageScrollConfig.defaultScrollOffset = 64;
   }
 }

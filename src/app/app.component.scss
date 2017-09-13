@@ -21,7 +21,7 @@ md-divider {
   z-index: 999;
 }
 
-.fixed-container {
+.fixed-sidenav {
   top: 64px;
   position: absolute;
 }
@@ -31,4 +31,8 @@ footer {
   .mat-display-2 {
     margin-bottom: 0;
   }
+}
+
+.sidenav-btn {
+  line-height: 20px;
 }

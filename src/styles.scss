@@ -1,24 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 @import '~@angular/material/theming';
-
-/*Global Styles*/
-body {
-  margin: 0;
-}
-
-.mat-list-item-content {
-  padding: 0 !important;
-}
-
-blockquote {
-  border-left: 3px solid #FF0800;
-  padding: 0 1rem;
-}
-
-.mat-tab-label {
-  width: 33.33%;
-}
+@include mat-core();
 
 /*Helpers*/
 .uppercase {
@@ -47,6 +29,23 @@ img {
   }
 }
 
+/*Global Styles*/
+body {
+  @extend .no-margin;
+}
+
+.mat-list-item-content {
+  @extend .no-padding;
+}
+
+blockquote {
+  border-left: 3px solid #ff1744;
+  padding: 0 1rem;
+}
+
+.mat-tab-label {
+  width: 33.33%;
+}
 
 /*Custom typography*/
 $app-typography : mat-typography-config(
@@ -56,5 +55,10 @@ $app-typography : mat-typography-config(
 
 @include angular-material-typography($app-typography);
 
-
 /*Custom themes*/
+$main-theme-primary: mat-palette($mat-red, A400, A200, A700);
+$main-theme-accent: mat-palette($mat-blue-grey, 800, 50, 900);
+$main-theme-warn: mat-palette($mat-yellow, 600);
+
+$main-theme: mat-dark-theme($main-theme-primary, $main-theme-accent, $main-theme-warn);
+@include angular-material-theme($main-theme);

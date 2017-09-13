@@ -8,6 +8,7 @@ import {
   MdButtonModule, MdCardModule, MdFormFieldModule, MdIconModule, MdInputModule, MdProgressBarModule,
   MdTabsModule, MdTooltipModule
 } from '@angular/material';
+import { Ng2PageScrollModule as ScrollModule } from 'ng2-page-scroll';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {
     MdTabsModule,
     MdFormFieldModule,
     MdInputModule,
-    MdTooltipModule
+    MdTooltipModule,
+    ScrollModule
   ],
   declarations: [HomeComponent]
 })

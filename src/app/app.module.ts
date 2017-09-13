@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '@shared/shared.module';
 import { MaterialModule, MdListModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { Ng2PageScrollModule as ScrollModule } from 'ng2-page-scroll';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdListModule,
     MdToolbarModule,
     FlexLayoutModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    ScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

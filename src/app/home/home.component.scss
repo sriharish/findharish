@@ -1,3 +1,10 @@
+@import "../../styles";
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .parallax {
   background-image: url('../../assets/img/main-splash.jpg');
   height: 100vh;
@@ -22,7 +29,8 @@
 }
 
 .container {
-  margin: 0 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @mixin img-dimensions($dim) {
@@ -62,4 +70,8 @@ form {
   .about-card {
     min-height: 136px;
   }
+}
+
+#about {
+  background-color: mat-color($main-theme-accent, 200);
 }

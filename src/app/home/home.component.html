@@ -1,10 +1,10 @@
 <div fxLayout="column" fxFlexFill>
-  <div class="parallax img-desaturated" fxLayout="column" fxLayoutAlign="center center">
+  <div id="splash" class="parallax img-desaturated" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-display-3 no-margin">I am <strong>Harish Vangavolu</strong></h1>
     <h1 class="mat-h1">{{splashText.subHeading}}</h1>
-    <button md-fab color="primary"><md-icon>keyboard_arrow_down</md-icon></button>
+    <button md-fab pageScroll pageScrollTarget="#about"><md-icon>keyboard_arrow_down</md-icon></button>
   </div>
-  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div id="about" class="container section" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-h1">
       About <strong>Me</strong>
     </h1>
@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div fxLayout="column" fxLayoutAlign="center center">
+  <div id="work" class="section" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-h1">
       My <strong>Work and Abilities</strong>
     </h1>
@@ -38,7 +38,7 @@
         <div class="container" fxLayout="column">
           <div *ngFor="let skill of skillsText.skills">
             <h2 class="mat-h2 work-level-h2">{{skill.name}}</h2>
-            <md-progress-bar color="primary" mode="determinate" [value]="skill.level"></md-progress-bar>
+            <md-progress-bar color="accent" mode="determinate" [value]="skill.level"></md-progress-bar>
           </div>
           <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between top" fxLayoutWrap>
             <div fxFlex="100%">
@@ -53,20 +53,23 @@
       </div>
     </div>
   </div>
-  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div id="process" class="container section" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-h1">
       Process of <strong>Creating</strong>
     </h1>
-      <md-tab-group fxFlexFill>
-        <md-tab *ngFor="let process of processText.processes" label="Project Management">
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <md-tab-group fxFlex="68%" fxFlex.lt-md="100%">
+        <md-tab *ngFor="let process of processText.processes" [label]="process.name">
           <h1>{{process.heading}}</h1>
           <p>
             {{process.content}}
           </p>
         </md-tab>
       </md-tab-group>
+      <img fxFlex="30%" fxHide.lt-md="true" src="https://www.aaravinfotech.com//wp-content/uploads/2016/07/social-media-marketing-1-400x333.png">
+    </div>
   </div>
-  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div id="contact" class="container section" fxLayout="column" fxLayoutAlign="center center">
     <h1 class="mat-h1">
       Contact <strong>Me</strong>
     </h1>

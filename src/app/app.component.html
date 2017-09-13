@@ -1,20 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<md-toolbar class="fixed-header">
-  <button md-icon-button (click)="sidenav.toggle()">
+<md-toolbar color="primary" class="fixed-header">
+  <button md-icon-button (click)="sidenav.toggle()" ngClass="sidenav-btn">
     <md-icon>{{sidenav.opened ? 'close' : 'menu'}}</md-icon>
   </button>
+  <button md-button routerLink="home">
+    Harish Vangavolu
+  </button>
+  <span class="mat-button" style="cursor: default;">
+    Coder / Entrepreneur / Human
+  </span>
 </md-toolbar>
-<md-sidenav-container class="fixed-container">
+<md-sidenav-container class="fixed-sidenav">
   <md-sidenav #sidenav mode="over">
     <md-list>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="home">Home</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="home">Home</button></md-list-item>
       <md-divider></md-divider>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="about">About</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="work">Work</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="process">Process</button></md-list-item>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="contact">Contact</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="about">About</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="work">Work</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="process">Process</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="contact">Contact</button></md-list-item>
       <md-divider></md-divider>
-      <md-list-item><button class="uppercase mat-button" md-button routerLink="blog">Blog</button></md-list-item>
+      <md-list-item><button class="uppercase" md-button routerLink="blog">Blog</button></md-list-item>
     </md-list>
   </md-sidenav>
   <router-outlet></router-outlet>
